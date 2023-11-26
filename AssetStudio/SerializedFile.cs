@@ -14,6 +14,7 @@ namespace AssetStudio
         public Game game;
         public long offset = 0;
         public string fullName;
+        public bool singleFile = false;
         public string originalPath;
         public string fileName;
         public int[] version = { 0, 0, 0, 0 };
