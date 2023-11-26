@@ -310,6 +310,10 @@ namespace AssetStudio.GUI
                         case Shader _ when Shader.Parsable:
                         case Animator _:
                         case MonoBehaviour _:
+                            if (assetsFile.singleFile)
+                            {
+                                assetItem.Text = assetsFile.fileName;
+                            }
                             exportable = true;
                             break;
                     }
